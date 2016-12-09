@@ -1,24 +1,66 @@
 
-Gurobi 7.0.1 (mac64, Python) logging started Tue Nov 29 22:41:07 2016
+Gurobi 7.0.1 (mac64, Python) logging started Thu Dec  8 20:43:25 2016
 
-Optimize a model with 2 rows, 2 columns and 4 nonzeros
+Warning: variables 1491 and 1492 have the same name "RgRange1"
+Warning: linear constraint 71 and linear constraint 72 have the same name "Range1"
+Warning: to let Gurobi read it back, use rlp format
+Optimize a model with 16472 rows, 16401 columns and 1091222 nonzeros
+Variable types: 14910 continuous, 1491 integer (1491 binary)
 Coefficient statistics:
-  Matrix range     [4e+01, 4e+02]
-  Objective range  [2e+03, 3e+03]
-  Bounds range     [1e+02, 1e+02]
-  RHS range        [1e+04, 6e+04]
-Presolve time: 0.01s
-Presolved: 2 rows, 2 columns, 4 nonzeros
+  Matrix range     [1e+00, 3e+00]
+  Objective range  [1e+00, 3e+00]
+  Bounds range     [1e+00, 4e+00]
+  RHS range        [2e+00, 3e+00]
+Presolve removed 1961 rows and 536 columns
+Presolve time: 2.08s
+Presolved: 14511 rows, 15865 columns, 1037816 nonzeros
+Variable types: 0 continuous, 15865 integer (1425 binary)
+Found heuristic solution: objective 348.0000000
 
-Iteration    Objective       Primal Inf.    Dual Inf.      Time
-       0    2.4000000e+33   1.171875e+30   2.400000e+03      0s
-       2    5.2000000e+05   0.000000e+00   0.000000e+00      0s
+Root relaxation: objective 8.836898e+01, 858 iterations, 0.52 seconds
 
-Solved in 2 iterations and 0.01 seconds
-Optimal objective  5.200000000e+05
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
 
-Gurobi 7.0.1 (mac64, Python) logging started Wed Nov 30 01:51:20 2016
+     0     0   88.36898    0 9214  348.00000   88.36898  74.6%     -    4s
+H    0     0                     346.0000000   88.36898  74.5%     -    5s
+     0     0   88.46946    0 9061  346.00000   88.46946  74.4%     -    6s
+     0     0   88.53055    0 9510  346.00000   88.53055  74.4%     -    7s
+     0     0   88.62363    0 10582  346.00000   88.62363  74.4%     -    9s
+     0     0   88.65173    0 10711  346.00000   88.65173  74.4%     -    9s
+     0     0   88.67379    0 10709  346.00000   88.67379  74.4%     -   11s
+     0     0   88.69218    0 11257  346.00000   88.69218  74.4%     -   11s
+     0     0   88.69323    0 11444  346.00000   88.69323  74.4%     -   12s
+     0     0   88.69392    0 11343  346.00000   88.69392  74.4%     -   13s
+     0     0   88.69392    0 11393  346.00000   88.69392  74.4%     -   14s
+     0     0   88.69392    0 11363  346.00000   88.69392  74.4%     -   14s
+     0     0   88.69392    0 11394  346.00000   88.69392  74.4%     -   15s
+     0     0   88.69392    0 11348  346.00000   88.69392  74.4%     -   16s
+     0     0   88.69392    0 11011  346.00000   88.69392  74.4%     -   19s
+     0     0   88.69392    0 10585  346.00000   88.69392  74.4%     -   22s
+     0     0   88.69392    0 10597  346.00000   88.69392  74.4%     -   23s
+     0     0   88.69392    0 10927  346.00000   88.69392  74.4%     -   25s
+     0     0   88.69392    0 10999  346.00000   88.69392  74.4%     -   26s
+     0     0   88.69392    0 10889  346.00000   88.69392  74.4%     -   28s
+     0     0   88.69392    0 10557  346.00000   88.69392  74.4%     -   31s
+     0     2   88.69392    0 10557  346.00000   88.69392  74.4%     -   33s
+    62    62   89.27497   15 10223  346.00000   88.70127  74.4%  51.8   35s
+*  311   180              63      91.0000000   88.70127  2.53%  31.6   38s
+   405   253   89.54444   15 9999   91.00000   88.70774  2.52%  31.6   40s
+H  535    72                      90.0000000   88.72651  1.41%  31.6   41s
+   804     5     cutoff    7        90.00000   88.88397  1.24%  29.5   45s
 
+Cutting planes:
+  Gomory: 4
+  MIR: 10
+  StrongCG: 1
+  Zero half: 13
 
-Gurobi 7.0.1 (mac64, Python) logging started Wed Nov 30 01:51:28 2016
+Explored 830 nodes (27917 simplex iterations) in 45.56 seconds
+Thread count was 8 (of 8 available processors)
 
+Solution count 4: 90 91 346 348 
+Pool objective bound 90
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 9.000000000000e+01, best bound 9.000000000000e+01, gap 0.0000%
